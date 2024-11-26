@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./asset/homePage/home.css">
 
 </head>
-<body class="bg-gray-900 p-6 ">
+<body class="bg-gray-900  ">
     <nav id="nav"
      class="fixed top-0 z-50 h-[77px] w-full flex items-center justify-between px-8 bg-[linear-gradient(90deg,#000000_0%,#EF7D2F_50%,#000000_100%)]">
      <!-- anime power_logo -->
@@ -39,13 +39,13 @@
              </li>
              <!-- about link-->
              <li class="list-nav-menu">
-                 <a href="./about.html" rel="noopener noreferrer" id="about-nav">
+                 <a href="./AboutPage/about.html" rel="noopener noreferrer" id="about-nav">
                      About
                  </a>
              </li>
              <!-- contact navbar -->
              <li class="list-nav-menu">
-                 <a href="#contact-section" id="contact_nav">
+                 <a href="./index.html" id="contact_nav">
                      Contact
                  </a>
              </li>
@@ -98,7 +98,7 @@
     </div>
 
     <!-- Tableau pour le total du panier -->
-    <div class="bg-gray-500 p-6 mt-6 rounded-lg shadow-md w-2/5  mx-auto">
+    <div class="bg-gray-500 p-6 mt-6 rounded-lg shadow-md w-2/5  mx-auto mb-[320px]">
         <h2 class="text-lg font-semibold  ">Cart Total</h2>
         <table class="w-full mt-4 text-left">
             <tr class="border-b border-solid border-white border-b-1">
@@ -173,69 +173,73 @@
 
         // Fonction de rendu du panier
         function renderCart() {
-    const cartTable = document.getElementById('cartItems');
-    cartTable.innerHTML = '';
-    let subtotal = 0;
-
-    cartItems.forEach((item, index) => {
-        const total = item.unitPrice * item.quantity;
-        subtotal += total;
-
-        cartTable.innerHTML += `
-            <tr class="border rounded-lg border-gray-400 bg-gray-700  mb-1.5">
-                <td class="px-4 py-2">
-                    <input type="checkbox" class="remove-checkbox" data-index="${index}">
-                </td>
-                <td class="px-4 py-2 flex items-center">
-                    <img src="${item.image}" alt="${item.name}" class="w-12 h-12 mr-4"> ${item.name}
-                </td>
-                <td class="px-4 py-2">${item.unitPrice.toFixed(2)}DH</td>
-                <td class="px-4 py-2">
-                    <button onclick="decreaseQuantity(${index})">-</button>
-                    ${item.quantity}
-                    <button onclick="increaseQuantity(${index})">+</button>
-                </td>
-                <td class="px-4 py-2">${total.toFixed(2)}DH</td>
-            </tr>
-        `;
-    });
-
-    // Mettre à jour les totaux
-    document.getElementById('subtotal').innerText = `${subtotal.toFixed(2)}DH`;
-    document.getElementById('totalPrice').innerText = `${subtotal.toFixed(2)}DH`;
-}
-
-
-        // Augmenter la quantité d'un produit
-        function increaseQuantity(index) {
-            cartItems[index].quantity++;
-            updateCart();
-        }
-
-        // Diminuer la quantité d'un produit
-        function decreaseQuantity(index) {
-            if (cartItems[index].quantity > 1) {
-                cartItems[index].quantity--;
-                updateCart();
+            const cartItemsTable = document.getElementById("cartItems");
+            cartItemsTable.innerHTML = ''; // Clear current cart content
+    
+            // Check if cart is empty
+            if (cartItems.length === 0) {
+                cartItemsTable.innerHTML = "<tr><td colspan='5' class='text-center text-white'>Your cart is empty!</td></tr>";
+            } else {
+                let subtotal = 0;
+                cartItems.forEach(item => {
+                    const total = item.price * item.quantity;
+                    subtotal += total;
+                    cartItemsTable.innerHTML += `
+                    <tr class="border-b border-gray-400">
+                        <td class="px-4 py-2"><input type="checkbox" class="itemSelect" data-id="${item.id}"></td>
+                        <td class="px-4 py-2">${item.title || item.name }</td>
+                        <td class="px-4 py-2">${item.price}DH</td>
+                        <td class="px-4 py-2">
+                            <input type="number" class="quantity text-zinc-900 font-bold" value="${item.quantity}" data-id="${item.id}" onchange="updateQuantity(${item.id}, this.value)">
+                        </td>
+                        <td class="px-4 py-2">${total}DH</td>
+                    </tr>
+                    `;
+                });
+                // Update the total price and subtotal
+                document.getElementById("subtotal").textContent = `${subtotal.toFixed(2)}DH`;
+                document.getElementById("totalPrice").textContent = `${subtotal.toFixed(2)}DH`;
             }
         }
-
-        // Mettre à jour le localStorage après modification
-        function updateCart() {
-            localStorage.setItem('cart', JSON.stringify(cartItems));
+    
+        // Update item quantity
+        function updateQuantity(itemId, quantity) {
+            const item = cartItems.find(item => item.id === itemId);
+            if (item) {
+                item.quantity = quantity;
+                // Save the updated cart to localStorage
+                localStorage.setItem("cart", JSON.stringify(cartItems));
+                renderCart();
+            }
+        }
+    
+        // Remove selected items
+        function removeSelectedItems() {
+            const selectedItems = document.querySelectorAll(".itemSelect:checked");
+            const selectedIds = Array.from(selectedItems).map(item => item.getAttribute("data-id"));
+    
+            cartItems = cartItems.filter(item => !selectedIds.includes(item.id.toString()));
+            // Save the updated cart to localStorage
+            localStorage.setItem("cart", JSON.stringify(cartItems));
             renderCart();
         }
-
-        // Rediriger vers la page de magasin
-        function returnToShop() {
-            window.location.href = '/shop';
+    
+        // Process Checkout
+        function processCheckout() {
+            alert("Proceeding to checkout...");
         }
-
-        // Cocher/décocher tous les produits
+    
+        // Return to shop
+        function returnToShop() {
+            window.location.href = './index.html';
+        }
+    
+        // Toggle Select All
         function toggleSelectAll() {
-            const checkboxes = document.querySelectorAll('.remove-checkbox');
-            const selectAllCheckbox = document.getElementById('selectAll');
-            checkboxes.forEach(checkbox => {
+            const selectAllCheckbox = document.getElementById("selectAll");
+            const itemCheckboxes = document.querySelectorAll(".itemSelect");
+    
+            itemCheckboxes.forEach(checkbox => {
                 checkbox.checked = selectAllCheckbox.checked;
             });
         }
@@ -284,5 +288,7 @@ document.querySelector('.fa-cart-shopping').addEventListener('click', function (
         // Initialisation du rendu du panier
         renderCart();
     </script>
+    
 </body>
+
 </html>

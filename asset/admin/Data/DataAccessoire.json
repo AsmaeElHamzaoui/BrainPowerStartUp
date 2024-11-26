@@ -1,102 +1,109 @@
 {
-  "DataAccessoires": [
-      {
-          "id": 1,
-          "name": "Attaque des Titans",
-          "text": "Après la destruction de sa ville natale et la mort de sa mère, le jeune Eren Yeager promet de purger la terre",
-          "price": 20.99,
-          "quantite":60,
-          "images": [
-              "../asset/admin/images/imgAccessoires/AttackOnTitan_1.jpg",
-              "../asset/admin/images/imgAccessoires/AttackOnTitan_2.jpg",
-              "../asset/admin/images/imgAccessoires/AttackOnTitan_3.jpg"
-          ]
-      },
-      {
-          "id": 2,
-          "name": "Bleach",
-          "text": "Le lycéen Kurosaki Ichigo ne ressemble à aucun adolescent ordinaire, car il est capable de voir des fantômes",
-          "price": 25.99,
-          "quantite":60,
-          "images": [
-              "../asset/admin/images/imgAccessoires/bleach_1.jpg",
-              "../asset/admin/images/imgAccessoires/bleach_2.jpg",
-              "../asset/admin/images/imgAccessoires/bleach_3.jpg"
-          ]
-      },
-      {
-          "id": 3,
-          "name": "Death Note",
-          "text": "Un lycéen intelligent se lance dans une croisade secrète afin d'éliminer les criminels",
-          "price": 30.99,
-          "quantite":60,
-          "images": [
-              "../asset/admin/images/imgAccessoires/DeathNote_1.jpg",
-              "../asset/admin/images/imgAccessoires/DeathNote_2.jpg",
-              "../asset/admin/images/imgAccessoires/DeathNote_3.jpg"
-          ]
-      },
-      {
-          "id": 4,
-          "name": "Demon Slayer",
-          "text": "Tanjiro et sa soeur Nezuko, qui se transforme lentement en démon.",
-          "price": 18.99,
-          "quantite":60,
-          "images": [
-              "../asset/admin/images/imgAccessoires/DemonSlayer_1.jpg",
-              "../asset/admin/images/imgAccessoires/DemonSlayer_2.jpg",
-              "../asset/admin/images/imgAccessoires/DemonSlayer_3.jpg"
-          ]
-      },
-      {
-          "id": 5,
-          "name": "Dragon Ball Z",
-          "text": "Après avoir appris qu'il était originaire d'une autre planète, le guerrier Goku",
-          "price": 27.99,
-          "quantite":60,
-          "images": [
-              "../asset/admin/images/imgAccessoires/DragonBallZ_1.jpg",
-              "../asset/admin/images/imgAccessoires/DragonBallZ_2.jpg",
-              "../asset/admin/images/imgAccessoires/DragonBallZ_3.jpg"
-          ]
-      },
-      {
-          "id": 6,
-          "name": "My Hero Academia",
-          "text": "Un jeune garçon sans super pouvoirs fou de super-héros est bien déterminé à s'inscrire dans une prestigieuse académie",
-          "price": 22.99,
-          "quantite":60,
-          "images": [
-              "../asset/admin/images/imgAccessoires/MyHeroAcademia_1.jpg",
-              "../asset/admin/images/imgAccessoires/MyHeroAcademia_2.jpg",
-              "../asset/admin/images/imgAccessoires/MyHeroAcademia_3.jpg"
-          ]
-      },
-      {
-          "id": 7,
-          "name": "Naruto",
-          "text": "Naruto Uzumaki, un adolescent ninja, le chef du village et le ninja le plus fort.",
-          "price": 19.99,
-          "quantite":60,
-          "images": [
-              "../asset/admin/images/imgAccessoires/naruto_1.jpg",
-              "../asset/admin/images/imgAccessoires/naruto_2.jpg",
-              "../asset/admin/images/imgAccessoires/naruto_3.jpg"
-          ]
-      },
-      {
-          "id": 8,
-          "name": "One Piece",
-          "text": "D. Luffy et de ses amis afin de trouver le plus grand trésor jamais laissé par le légendaire Pirate, Gol D Roger.",
-          "price": 24.99,
-          "quantite":60,
-          "images": [
-              "../asset/admin/images/imgAccessoires/OnePiece_1.jpg",
-              "../asset/admin/images/imgAccessoires/OnePiece_2.jpg",
-              "../asset/admin/images/imgAccessoires/OnePiece_3.jpg"
-          ]
-      }
-  ]
-}
-
-
+    "DataAccessoires": [
+        {
+            "id": 1,
+            "name": "Attaque des Titans",
+            "text": "Après la destruction de sa ville natale et la mort de sa mère, le jeune Eren Yeager promet de purger la terre",
+            "price": 20.99,
+            "quantite": 60,
+            "images": [
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/AttackOnTitan_1.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/AttackOnTitan_2.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/AttackOnTitan_3.jpg"
+            ],
+            "type": "Accessoire"
+        },
+        {
+            "id": 2,
+            "name": "Bleach",
+            "text": "Le lycéen Kurosaki Ichigo ne ressemble à aucun adolescent ordinaire, car il est capable de voir des fantômes",
+            "price": 25.99,
+            "quantite": 60,
+            "images": [
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/bleach_1.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/bleach_2.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/bleach_3.jpg"
+            ],
+            "type": "Accessoire"
+        },
+        {
+            "id": 3,
+            "name": "Death Note",
+            "text": "Un lycéen intelligent se lance dans une croisade secrète afin d'éliminer les criminels",
+            "price": 30.99,
+            "quantite": 60,
+            "images": [
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DeathNote_1.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DeathNote_2.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DeathNote_3.jpg"
+            ],
+            "type": "Accessoire"
+        },
+        {
+            "id": 4,
+            "name": "Demon Slayer",
+            "text": "Tanjiro et sa soeur Nezuko, qui se transforme lentement en démon.",
+            "price": 18.99,
+            "quantite": 60,
+            "images": [
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DemonSlayer_1.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DemonSlayer_2.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DemonSlayer_3.jpg"
+            ],
+            "type": "Accessoire"
+        },
+        {
+            "id": 5,
+            "name": "Dragon Ball Z",
+            "text": "Après avoir appris qu'il était originaire d'une autre planète, le guerrier Goku",
+            "price": 27.99,
+            "quantite": 60,
+            "images": [
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DragonBallZ_1.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DragonBallZ_2.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DragonBallZ_3.jpg"
+            ],
+            "type": "Accessoire"
+        },
+        {
+            "id": 6,
+            "name": "My Hero Academia",
+            "text": "Un jeune garçon sans super pouvoirs fou de super-héros est bien déterminé à s'inscrire dans une prestigieuse académie",
+            "price": 22.99,
+            "quantite": 60,
+            "images": [
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/MyHeroAcademia_1.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/MyHeroAcademia_2.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/MyHeroAcademia_3.jpg"
+            ],
+            "type": "Accessoire"
+        },
+        {
+            "id": 7,
+            "name": "Naruto",
+            "text": "Naruto Uzumaki, un adolescent ninja, le chef du village et le ninja le plus fort.",
+            "price": 19.99,
+            "quantite": 60,
+            "images": [
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/naruto_1.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/naruto_2.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/naruto_3.jpg"
+            ],
+            "type": "Accessoire"
+        },
+        {
+            "id": 8,
+            "name": "One Piece",
+            "text": "D. Luffy et de ses amis afin de trouver le plus grand trésor jamais laissé par le légendaire Pirate, Gol D Roger.",
+            "price": 24.99,
+            "quantite": 60,
+            "images": [
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/OnePiece_1.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/OnePiece_2.jpg",
+                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/OnePiece_3.jpg"
+            ],
+            "type": "Accessoire"
+        }
+    ]
+  }
+  

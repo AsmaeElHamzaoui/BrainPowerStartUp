@@ -203,15 +203,15 @@
                 let productItem = document.createElement('div');
                 productItem.classList.add('flex', 'justify-between', 'items-center', 'p-2', 'bg-gray-700', 'rounded-md');
                 productItem.innerHTML = `
-                    <span>${product.name}</span>
+                    <span>${product.name || product.title}</span>
                     <span>${product.price} DH</span>
                 `;
                 productList.appendChild(productItem);
                 totalPrice += parseFloat(product.price);
             });
 
-            document.getElementById('totalPrice').textContent = totalPrice + ' DH';
-            document.getElementById('subtotal').textContent = totalPrice + ' DH';
+            document.getElementById('totalPrice').textContent = totalPrice.toFixed(2) + ' DH';
+            document.getElementById('subtotal').textContent = totalPrice.toFixed(2) + ' DH';
         }
 
         // Fonction pour acheter la commande

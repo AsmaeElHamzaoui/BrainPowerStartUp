@@ -596,7 +596,6 @@ function afficheTable(category) {
             <thead class="bg-gray-100">
                 <tr>
                     <th class="px-6 py-3 text-gray-600 font-medium uppercase">Name</th>
-                    <th class="px-6 py-3 text-gray-600 font-medium uppercase">Description</th>
                     <th class="px-6 py-3 text-gray-600 font-medium uppercase">Price</th>
                     <th class="px-6 py-3 text-gray-600 font-medium uppercase">Genre</th>
                     <th class="px-6 py-3 text-gray-600 font-medium uppercase">Production Date</th>
@@ -612,7 +611,6 @@ function afficheTable(category) {
                 ${paginatedMovie.map(Movie => `
                     <tr class="border-t">
                         <td class="px-6 py-4">${Movie.name}</td>
-                        <td class="px-6 py-4">${Movie.text}</td>
                         <td class="px-6 py-4">${Movie.price}</td>
                         <td class="px-6 py-4">${Movie.genre}</td>
                         <td class="px-6 py-4">${Movie.date}</td>
@@ -621,7 +619,7 @@ function afficheTable(category) {
                         <td class="px-6 py-4">${Movie.quantite}</td>
                         <td class="px-6 py-4"><img src="${Movie.image}" alt="Movie" class="w-16 h-16 object-cover"></td>
                         <td class="px-6 py-4">
-                            <iframe src="${Movie.video}" width="150px"  height="100px"></iframe>
+                            <iframe src="${Movie.video}" width="100px"  height="50px"></iframe>
                         </td>
                         <td class="px-6 py-4 flex items-center">
                             <button onclick="ModifierMovie(${Movie.id})" class="px-4 py-2 rounded"><i class="bi bi-pencil-square text-blue-600"></i></button>

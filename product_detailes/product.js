@@ -12,36 +12,28 @@ sizeBtns.forEach(btnSize => {
     });
 }); 
 
-// add incries ..etc
 const incriesBtn = document.getElementById('incries');
 const QuantityDisplay = document.getElementById('Quantity');
 const dincriesBtn = document.getElementById('dincries');
 
-
 function incries() {
-    // Convert the current text content to a number, increment, and update
     QuantityDisplay.textContent = parseInt(QuantityDisplay.textContent) + 1;
 }
 
 function dincries() {
-    // Convert the current text content to a number, decrement, and update
-    // Ensure the quantity doesn't go below 0
     const currentQuantity = parseInt(QuantityDisplay.textContent);
     if (currentQuantity > 0) {
         QuantityDisplay.textContent = currentQuantity - 1;
     }
 }
 
-incriesBtn.addEventListener('click', dincries);
-dincriesBtn.addEventListener('click', incries);
+incriesBtn.addEventListener('click', incries);      
+dincriesBtn.addEventListener('click', dincries);
 
-// switch between each product
-
-// Select the main image and all thumbnails
+// Switch between product images
 const mainImage = document.getElementById('mainImage');
 const thumbnails = document.querySelectorAll('.thumbnail');
 
-// Add a click event listener to each thumbnail
 thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', function() {
         // Update the src of the main image to match the clicked thumbnail
@@ -49,11 +41,26 @@ thumbnails.forEach(thumbnail => {
     });
 });
 
+// Get product ID and type from the URL
 const urlParams = new URLSearchParams(window.location.search);
-const productId = urlParams.get("id"); // Get product id from the URL
+const productId = urlParams.get("id");
+const productType = urlParams.get("type"); // Get the type (Tshirt, Accessoire, Movie)
 
-// Assuming you have the data stored in a variable `DataTshirt`
-const product = DataTshirt.find(p => p.id === parseInt(productId)); // Find the product using the id
+// Retrieve data from localStorage
+const DataTshirt = JSON.parse(localStorage.getItem("Tshirt"));
+const DataAccessoires = JSON.parse(localStorage.getItem("Accessoire"));
+const DataMovie = JSON.parse(localStorage.getItem("Movie")); // Assuming you have movie data in localStorage
+
+let product = null;
+
+// Based on the product type, find the corresponding product
+if (productType === "Tshirt" && DataTshirt) {
+    product = DataTshirt.find(p => p.id === parseInt(productId));
+} else if (productType === "Accessoire" && DataAccessoires) {
+    product = DataAccessoires.find(p => p.id === parseInt(productId));
+} else if (productType === "Movie" && DataMovie) {
+    product = DataMovie.find(p => p.id === parseInt(productId));
+}
 
 if (product) {
     // Populate the product details on the page
