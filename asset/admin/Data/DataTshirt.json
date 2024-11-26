@@ -7,9 +7,9 @@
             "price": 20.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/AttackOnTitan_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/AttackOnTitan_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/AttackOnTitan_3.jpg"
+                "../asset/admin/images/imgTshirts/AttackOnTitan_1.jpg",
+                "../asset/admin/images/imgTshirts/AttackOnTitan_2.jpg",
+                "../asset/admin/images/imgTshirts/AttackOnTitan_3.jpg"
             ],
             "type": "Tshirt"
         },
@@ -20,9 +20,9 @@
             "price": 25.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/bleach_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/bleach_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/bleach_3.jpg"
+                "../asset/admin/images/imgTshirts/bleach_1.jpg",
+                "../asset/admin/images/imgTshirts/bleach_2.jpg",
+                "../asset/admin/images/imgTshirts/bleach_3.jpg"
             ],
             "type": "Tshirt"
         },
@@ -33,9 +33,9 @@
             "price": 30.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/DeathNote_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/DeathNote_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/DeathNote_3.jpg"
+                "../asset/admin/images/imgTshirts/DeathNote_1.jpg",
+                "../asset/admin/images/imgTshirts/DeathNote_2.jpg",
+                "../asset/admin/images/imgTshirts/DeathNote_3.jpg"
             ],
             "type": "Tshirt"
         },
@@ -46,9 +46,9 @@
             "price": 18.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/DemonSlayer_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/DemonSlayer_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/DemonSlayer_3.jpg"
+                "../asset/admin/images/imgTshirts/DemonSlayer_1.jpg",
+                "../asset/admin/images/imgTshirts/DemonSlayer_2.jpg",
+                "../asset/admin/images/imgTshirts/DemonSlayer_3.jpg"
             ],
             "type": "Tshirt"
         },
@@ -59,9 +59,9 @@
             "price": 27.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/DragonBallZ_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/DragonBallZ_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/DragonBallZ_3.jpg"
+                "../asset/admin/images/imgTshirts/DragonBallZ_1.jpg",
+                "../asset/admin/images/imgTshirts/DragonBallZ_2.jpg",
+                "../asset/admin/images/imgTshirts/DragonBallZ_3.jpg"
             ],
             "type": "Tshirt"
         },
@@ -72,9 +72,9 @@
             "price": 22.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/MyHeroAcademia_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/MyHeroAcademia_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/MyHeroAcademia_3.jpg"
+                "../asset/admin/images/imgTshirts/MyHeroAcademia_1.jpg",
+                "../asset/admin/images/imgTshirts/MyHeroAcademia_2.jpg",
+                "../asset/admin/images/imgTshirts/MyHeroAcademia_3.jpg"
             ],
             "type": "Tshirt"
         },
@@ -85,9 +85,9 @@
             "price": 19.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/naruto_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/naruto_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/naruto_3.jpg"
+                "../asset/admin/images/imgTshirts/naruto_1.jpg",
+                "../asset/admin/images/imgTshirts/naruto_2.jpg",
+                "../asset/admin/images/imgTshirts/naruto_3.jpg"
             ],
             "type": "Tshirt"
         },
@@ -98,9 +98,9 @@
             "price": 24.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/OnePiece_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/OnePiece_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgTshirts/OnePiece_3.jpg"
+                "../asset/admin/images/imgTshirts/OnePiece_1.jpg",
+                "../asset/admin/images/imgTshirts/OnePiece_2.jpg",
+                "../asset/admin/images/imgTshirts/OnePiece_3.jpg"
             ],
             "type": "Tshirt"
         }

@@ -7,9 +7,9 @@
             "price": 20.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/AttackOnTitan_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/AttackOnTitan_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/AttackOnTitan_3.jpg"
+                "../asset/admin/images/imgAccessoires/AttackOnTitan_1.jpg",
+                "../asset/admin/images/imgAccessoires/AttackOnTitan_2.jpg",
+                "../asset/admin/images/imgAccessoires/AttackOnTitan_3.jpg"
             ],
             "type": "Accessoire"
         },
@@ -20,9 +20,9 @@
             "price": 25.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/bleach_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/bleach_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/bleach_3.jpg"
+                "../asset/admin/images/imgAccessoires/bleach_1.jpg",
+                "../asset/admin/images/imgAccessoires/bleach_2.jpg",
+                "../asset/admin/images/imgAccessoires/bleach_3.jpg"
             ],
             "type": "Accessoire"
         },
@@ -33,9 +33,9 @@
             "price": 30.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DeathNote_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DeathNote_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DeathNote_3.jpg"
+                "../asset/admin/images/imgAccessoires/DeathNote_1.jpg",
+                "../asset/admin/images/imgAccessoires/DeathNote_2.jpg",
+                "../asset/admin/images/imgAccessoires/DeathNote_3.jpg"
             ],
             "type": "Accessoire"
         },
@@ -46,9 +46,9 @@
             "price": 18.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DemonSlayer_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DemonSlayer_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DemonSlayer_3.jpg"
+                "../asset/admin/images/imgAccessoires/DemonSlayer_1.jpg",
+                "../asset/admin/images/imgAccessoires/DemonSlayer_2.jpg",
+                "../asset/admin/images/imgAccessoires/DemonSlayer_3.jpg"
             ],
             "type": "Accessoire"
         },
@@ -59,9 +59,9 @@
             "price": 27.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DragonBallZ_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DragonBallZ_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/DragonBallZ_3.jpg"
+                "../asset/admin/images/imgAccessoires/DragonBallZ_1.jpg",
+                "../asset/admin/images/imgAccessoires/DragonBallZ_2.jpg",
+                "../asset/admin/images/imgAccessoires/DragonBallZ_3.jpg"
             ],
             "type": "Accessoire"
         },
@@ -72,9 +72,9 @@
             "price": 22.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/MyHeroAcademia_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/MyHeroAcademia_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/MyHeroAcademia_3.jpg"
+                "../asset/admin/images/imgAccessoires/MyHeroAcademia_1.jpg",
+                "../asset/admin/images/imgAccessoires/MyHeroAcademia_2.jpg",
+                "../asset/admin/images/imgAccessoires/MyHeroAcademia_3.jpg"
             ],
             "type": "Accessoire"
         },
@@ -85,9 +85,9 @@
             "price": 19.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/naruto_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/naruto_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/naruto_3.jpg"
+                "../asset/admin/images/imgAccessoires/naruto_1.jpg",
+                "../asset/admin/images/imgAccessoires/naruto_2.jpg",
+                "../asset/admin/images/imgAccessoires/naruto_3.jpg"
             ],
             "type": "Accessoire"
         },
@@ -98,9 +98,9 @@
             "price": 24.99,
             "quantite": 60,
             "images": [
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/OnePiece_1.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/OnePiece_2.jpg",
-                "../../../../BrainPower_startup2/asset/admin/images/imgAccessoires/OnePiece_3.jpg"
+                "../asset/admin/images/imgAccessoires/OnePiece_1.jpg",
+                "../asset/admin/images/imgAccessoires/OnePiece_2.jpg",
+                "../asset/admin/images/imgAccessoires/OnePiece_3.jpg"
             ],
             "type": "Accessoire"
         }
